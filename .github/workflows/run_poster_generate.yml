@@ -138,7 +138,8 @@ jobs:
         run: |
           git config --local user.email "${{ env.GITHUB_EMAIL }}"
           git config --local user.name "${{ env.GITHUB_NAME }}"
-          git commit -a -m 'update new poster' || echo "nothing to commit"
-          git push || echo "nothing to push"
+          git add -A
+          git commit -m ""
+          git push
 
 
